@@ -4,6 +4,6 @@ for img in *.tif *.jpg *.png *.gif; do
 		-fill black		\
 		-pointsize 20		\
 		-gravity south		\
-		-annotate +0+5 "${img}"	\
+		-annotate +0+5 "${img::-4}"	\
 		"output/${img}"
 done
