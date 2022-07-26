@@ -1,8 +1,8 @@
-for img in *.tif; do
+for img in *.tif *.jpg *.png *.gif; do
 	convert				\
 		"${img}"		\
 		-fill black		\
-		-pointsize 200		\
+		-pointsize 20		\
 		-gravity south		\
 		-annotate +0+5 "${img}"	\
 		"output/${img}"
